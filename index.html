@@ -3,15 +3,49 @@
 <script>
 
 function getComputerChoice() { 
-    const computerChoices = ["Rock", "Paper", "Scissors"];
+    const computerChoices = ["rock", "paper", "scissors"];
     const randomChoice = Math.floor(Math.random() * computerChoices.length);
-    console.log(computerChoices[randomChoice]);
+    return(computerChoices[randomChoice]);
 }
 
+function playRound() {
+}
+const computerSelection = getComputerChoice();
+let playerSelection = prompt("Choose rock, paper or scissors and let the battle being!").toLowerCase();
 
+if (playerSelection === "rock" && computerSelection === "rock") {
+    console.log("It looks like it's a tie!"); 
+}
 
+else if (playerSelection === "rock" && computerSelection === "paper") {
+    console.log("You lose! Paper beats rock.");
+}
 
-    
+else if (playerSelection === "rock" && computerSelection === "scissors") {
+    console.log("You win! Rock beats scissors.");
+}
+
+else if (playerSelection === "paper" && computerSelection === "paper") {
+    console.log("It looks like it's a tie!");
+}
+
+else if (playerSelection === "paper" && computerSelection === "rock") {
+    console.log("You win! Paper beats rock.");
+}
+else if (playerSelection === "paper" && computerSelection === "scissors") {
+    console.log("You lose! Scissors beats paper.");
+}
+
+else if (playerSelection === "scissors" && computerSelection === "scissors") {
+    console.log("It looks like it's a tie!");
+}
+else if (playerSelection === "scissors" && computerSelection === "rock") {
+    console.log("You lose! Rock beats scissors.");
+}
+
+else if (playerSelection === "scissors" && computerSelection === "paper") {
+    console.log("You win! Scissors beats paper.");
+}
     
 
 

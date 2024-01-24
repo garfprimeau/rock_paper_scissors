@@ -1,0 +1,64 @@
+body {
+    color: white;
+    background-color: black;
+    
+}
+
+
+
+#centeredBox {
+    justify-content: center;
+    align-items: center;
+    background-color: #0BDA51;
+    
+}
+
+#buttonContainer {
+    border: 5px solid yellow;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+}
+
+h2 {
+    color: #0BDA51;
+    text-align: center;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+}
+
+#buttons {
+    color: red;
+    font-weight: 1000;
+    height: 100px;
+    width: 100px;
+}
+
+footer {
+    text-align: center;
+    background-color: red;
+}
+
+header {
+    background-color: black;
+    border: 5px dotted yellow;
+    margin-bottom: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    padding-top: 20px;
+    color: yellow;
+    font-weight: 700;
+    font-size: large;
+}
